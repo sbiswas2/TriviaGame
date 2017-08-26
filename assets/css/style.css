@@ -1,3 +1,15 @@
 .jumbotron {
 	text-align: center;
+	background-color: #454545;
+	color: white;
+}
+
+body {
+	background-image: url(../images/grey-background.jpg);
+}
+
+.game {
+	text-align: center;
+	color: white;
+	font-size: large;
 }
