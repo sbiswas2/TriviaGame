@@ -1,31 +1,36 @@
-// Start button to start the trivia game
+// Window onload function?  see stopwatch.js file
+$("#question").hide();
+$("#answer").hide();
+
+var number = 30;
+var interValid;
+
+// Start button
+$("#start").click(function() {
+	run()
+	$("#question").show();
+	$("#answer").show();
+});
+
+// Run function
+function run() {
+  intervalId = setInterval(decrement, 1000);
+}
+//  Decrement function
+function decrement() {
+  number--;
+  $("#time").html("<h2> Time Remaining: " + number + " Seconds</h2>");
+  if (number === 0) {
+    stop();
+  }
+}
+//  Stop function
+function stop() {
+  clearInterval(intervalId);
+}
+
+//  Execute the run function.
+//	run();
 
 
-
-// trivia game that shows only one question until the player answers it or their time runs out.
-	// use append to display answers
-	// use button click for answers - maybe css hover feature?
-
-
-
-// If player selects the correct answer, show a screen congratulating them for choosing the right option. 
-// After a few seconds, display the next question -- do this without user input!! 3-5 seconds
-
-
-
-// The scenario is similar for wrong answers and time-outs.
-
-
-
-// If the player runs out of time, tell the player that time's up and display the correct answer. 
-// Wait a few seconds, then show the next question.
-
-
-
-// If the player chooses the wrong answer, tell the player they selected the wrong option and 
-// then display the correct answer. Wait a few seconds, then show the next question.
-
-
-
-// On the final screen, show the number of correct answers, incorrect answers, and an option to 
-// restart the game (without reloading the page).
+// Reset function
