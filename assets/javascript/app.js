@@ -4,6 +4,8 @@ $("#answer").hide();
 
 var number = 30;
 var interValid;
+var correctGuess = 0;
+var incorrectGuess = 0;
 
 // Start button
 $("#start").click(function() {
@@ -29,8 +31,54 @@ function stop() {
   clearInterval(intervalId);
 }
 
+
+$("#option1").click(function() {
+	var answer = ($(this).attr("value"));
+	if(answer === "correct"){
+		correctGuess++;
+		console.log(correctGuess);
+	} else {
+		incorrectGuess--;
+		console.log(incorrectGuess);
+	}
+});
+
+$("#option2").click(function() {
+	var answer = ($(this).attr("value"));
+	if(answer === "correct"){
+		correctGuess++;
+		console.log(correctGuess);
+	} else {
+		incorrectGuess--;
+		console.log(incorrectGuess);
+	}
+});
+
+$("#option3").click(function() {
+	var answer = ($(this).attr("value"));
+	if(answer === "correct"){
+		correctGuess++;
+		console.log(correctGuess);
+	} else {
+		incorrectGuess--;
+		console.log(incorrectGuess);
+	}
+});
+
+$("#option4").click(function() {
+	var answer = ($(this).attr("value"));
+	if(answer === "correct"){
+		correctGuess++;
+		console.log(correctGuess);
+	} else {
+		incorrectGuess--;
+		console.log(incorrectGuess);
+	}
+});
+
 //  Execute the run function.
 //	run();
 
+// Done button
 
 // Reset function

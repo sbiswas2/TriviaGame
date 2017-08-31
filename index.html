@@ -13,15 +13,19 @@
 		<div class="jumbotron jumbotron-fluid">	
     		<h1 class="display-3">Trivia! Trivia! Trivia!</h1>
   		</div>
-  		<div class="game" id="time">
+  		<div class="game btn-group-lg" id="time">
   			<button type="button" class="btn btn-light" id="start">Start</button>
   		</div>
   		<div class="game" id="question">
   			<h3>Who is the best basketball player ever?</h3>
   		</div>
-  		<div class="game" id="answer">
-  			<h3>Michael Jordan</h3>
+  		<div class="btn-group-lg game" data-toggle="buttons" id="answer">
+  			<button type="button" class="btn btn-light" id="option1" value="correct">Michael Jordan</button>
+  			<button type="button" class="btn btn-light" id="option2" value="incorrect">Kareem Abdul-Jabaar</button>
+  			<button type="button" class="btn btn-light" id="option3" value="incorrect">Kobe Bryant</button>
+  			<button type="button" class="btn btn-light" id="option4" value="incorrect">Lebron James</button>
   		</div>
+
 	</div>
 </body>
 </html>
